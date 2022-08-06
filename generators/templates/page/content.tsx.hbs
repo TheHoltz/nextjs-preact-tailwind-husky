@@ -1,0 +1,27 @@
+import type { NextPage } from 'next'
+
+import { useEffect, useState } from 'react'
+import { NextSeo } from 'next-seo'
+
+const use{{pascalCase name}} = () => {
+
+  const PAGE_SEO = {
+    title: 'Page Title',
+    description: 'Page Description',
+  }
+
+  return { PAGE_SEO }
+}
+
+const {{pascalCase name}}: NextPage = () => {
+  const { PAGE_SEO } = use{{pascalCase name}}()
+
+  return (
+    <>
+      <NextSeo {...PAGE_SEO} />
+      <h1>{{pascalCase name}}</h1>
+    </>
+  )
+}
+
+export default {{pascalCase name}}

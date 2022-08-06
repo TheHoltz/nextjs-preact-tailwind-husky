@@ -1,8 +1,13 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import NextNProgress from 'nextjs-progressbar'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const App = ({ Component, pageProps }: AppProps) => {
+  return (
+    <>
+      <NextNProgress color="#000" height={6} key="progress-bar" />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default MyApp
+export default App

@@ -1,0 +1,16 @@
+import { {{pascalCase name}} } from '@/templates'
+import { GetServerSideProps } from 'next'
+
+const {{pascalCase name}}Wrapper = (props: any) => {
+  return <{{pascalCase name}} {...props} />
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+     
+    }
+  }
+}
+
+export default {{pascalCase name}}Wrapper
