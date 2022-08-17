@@ -6,6 +6,7 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     nextScriptWorkers: true,
+    esmExternals: false,
     optimizeCss: true
   }
 }
